@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js 计算器</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+    <div class="con">
+        <!--con start-->
+        <div class="header">
+            <!--header start-->
+            <div class="screen">
+                <div id="test1">0</div>
+                <div id="test2"></div>
+            </div>
+        </div>
+        <!--end header-->
+        <div class="acticle">
+            <!--article start-->
+            <ul class="func">
+                <li>
+                    <button class="cle" id="clear" onclick="clearData()">清空</button>
+                </li>
+                <li>
+                    <button class="del" id="delete" onclick="delNum()">退格</button>
+                </li>
+            </ul>
+            <ul class="num">
+                <li>
+                    <button id="1" value="1" onclick="addNum('1')">1</button>
+                </li>
+                <li>
+                    <button id="2" value="2" onclick="addNum('2')">2</button>
+                </li>
+                <li>
+                    <button id="3" value="3" onclick="addNum('3')">3</button>
+                </li>
+                <li>
+                    <button id="4" value="4" onclick="addNum('4')">4</button>
+                </li>
+                <li>
+                    <button id="5" value="5" onclick="addNum('5')">5</button>
+                </li>
+                <li>
+                    <button id="6" value="6" onclick="addNum('6')">6</button>
+                </li>
+                <li>
+                    <button id="7" value="7" onclick="addNum('7')">7</button>
+                </li>
+                <li>
+                    <button id="8" value="8" onclick="addNum('8')">8</button>
+                </li>
+                <li>
+                    <button id="9" value="9" onclick="addNum('9')">9</button>
+                </li>
+                <li>
+                    <button id="0" value="0" onclick="addNum('0')">0</button>
+                </li>
+                <li>
+                    <button id="+/-" value="+/-" onclick="addNog()">+/-</button>
+                </li>
+                <li>
+                    <button id="." value="." onclick="addFlo()">.</button>
+                </li>
+            </ul>
+            <ul class="char-1">
+                <li>
+                    <button id="+" value="+" onclick="operation('+')">+</button>
+                </li>
+                <li>
+                    <button id="-" value="-" onclick="operation('-')">-</button>
+                </li>
+                <li>
+                    <button id="*" value="*" onclick="operation('*')">*</button>
+                </li>
+                <li>
+                    <button id="/" value="/" onclick="operation('/')">/</button>
+                </li>
+                <li>
+                    <button id="pi" onclick="getPi()">π</button>
+                </li>
+            </ul>
+            <ul class="char-2">
+                <li>
+                    <button id="%" value="%" onclick="operation('%')">%</button>
+                </li>
+                <li>
+                    <button id="pow" onclick="getPow()">x&sup2;</button>
+                </li>
+                <li>
+                    <button id="sqrt" onclick="getSqrt()">&radic;x</button>
+                </li>
+                <li>
+                    <button id="1/x" onclick="getReci()">1/x</button>
+                </li>
+                <li>
+                    <button id="result" onclick="getResult()">=</button>
+                </li>
+            </ul>
+            <ul class="special">
+                <li>
+                    <button id="sin" onclick="getSin()">sin</button>
+                </li>
+                <li>
+                    <button id="cos" onclick="getCos()">cos</button>
+                </li>
+                <li>
+                    <button id="tan" onclick="getTan()">tan</button>
+                </li>
+            </ul>
+        </div>
+        <!--end acticle-->
+    </div>
+    <!--end con-->
+    <script type="text/javascript" src="./test2.js"></script>
+</body>
+
+</html>
